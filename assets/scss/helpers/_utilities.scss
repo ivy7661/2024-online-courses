@@ -1,0 +1,273 @@
+// color
+.text-primary {
+  color: $primary;
+}
+.text-secondary {
+  color: $secondary;
+}
+
+.bg-primary {
+  background: $primary;
+}
+
+.bg-secondary {
+  background: $secondary;
+}
+
+// font-size
+.fs-small{
+  font-size: 14px;
+}
+
+@for $i from 1 through $max {
+  .fs-#{$i} {
+    font-size: $i * 4px;
+  }
+}
+
+@for $i from 1 through $max{
+  @include pad{
+    .fs-md-#{$i} {
+      font-size: $i * 4px;
+    }
+  }
+}
+@for $i from 1 through $max{
+  @include mobile{
+    .fs-sm-#{$i} {
+      font-size: $i * 4px;
+    }
+  }
+}
+
+// font-weight, style
+.fw-regular {
+  font-weight: 400;
+}
+
+.fw-bold {
+  font-weight: 500;
+}
+
+.fw-bolder {
+  font-weight: 700;
+}
+
+.fw-black {
+  font-weight: 900;
+}
+
+.fw-italic {
+  font-style: italic;
+}
+
+// flex
+.d-flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.d-none {
+  display: none;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+@include pad {
+  .d-md-none{
+    display: none;
+  }
+
+  .d-md-block {
+    display: block;
+  }
+
+  .flex-md-column {
+    flex-direction: column;
+  }
+
+  .align-md-center {
+    align-items: center;
+  }
+  .align-md-start {
+    align-items: flex-start;
+  }
+}
+
+@include mobile {
+  .d-sm-none {
+    display: none;
+  }
+  .flex-sm-column {
+    flex-direction: column;
+  }
+  .justify-sm-center {
+    justify-content: center;
+  }
+}
+
+// spacing
+// padding-x
+@for $i from 1 through $max {
+  .px-#{$i} {
+    padding-right: $i * 4px;
+    padding-left: $i * 4px;
+  }
+}
+@for $i from 1 through $max{
+  @include pad{
+    .px-md-#{$i} {
+      padding-right: $i * 4px;
+      padding-left: $i * 4px;
+    }
+  }
+}
+@for $i from 1 through $max{
+  @include mobile{
+    .px-sm-#{$i} {
+      padding-right: $i * 4px;
+      padding-left: $i * 4px;
+    }
+  }
+}
+
+// padding-y
+@for $i from 1 through $max {
+  .py-#{$i} {
+    padding-top: $i * 4px;
+    padding-bottom: $i * 4px;
+  }
+}
+@for $i from 1 through $max {
+  @include pad{
+    .py-md-#{$i} {
+      padding-top: $i * 4px;
+      padding-bottom: $i * 4px;
+    }
+  }
+}
+@for $i from 1 through $max {
+  @include mobile{
+    .py-sm-#{$i} {
+      padding-top: $i * 4px;
+      padding-bottom: $i * 4px;
+    }
+  }
+}
+
+// pb
+@for $i from 1 through $max {
+  .pb-#{$i} {
+    padding-bottom: $i * 4px;
+  }
+}
+@for $i from 1 through $max {
+  @include pad{
+    .pb-md-#{$i} {
+      padding-bottom: $i * 4px;
+    }
+  }
+}
+@for $i from 1 through $max {
+  @include mobile{
+    .pb-sm-#{$i} {
+      padding-bottom: $i * 4px;
+    }
+  }
+}
+
+// margin
+.mx-auto {
+  margin: 0 auto;
+}
+
+// ms
+@for $i from 1 through $max {
+  .ms-#{$i} {
+    margin-left: $i * 4px;
+  }
+}
+@for $i from 1 through $max {
+  @include pad{
+    .ms-md-#{$i} {
+      margin-left: $i * 4px;
+    }
+  }
+}
+@for $i from 1 through $max {
+  @include mobile{
+    .ms-sm-#{$i} {
+      margin-left: $i * 4px;
+    }
+  }
+}
+
+// me
+@for $i from 1 through $max {
+  .me-#{$i} {
+    margin-right: $i * 4px;
+  }
+}
+@for $i from 1 through $max {
+  @include pad{
+    .me-md-#{$i} {
+      margin-right: $i * 4px;
+    }
+  }
+}
+@for $i from 1 through $max {
+  @include mobile{
+    .me-sm-#{$i} {
+      margin-right: $i * 4px;
+    }
+  }
+}
+
+// mb
+@for $i from 1 through $max {
+  .mb-#{$i} {
+    margin-bottom: $i * 4px;
+  }
+}
+@for $i from 1 through $max {
+  @include pad{
+    .mb-md-#{$i} {
+      margin-bottom: $i * 4px;
+    }
+  }
+}
+@for $i from 1 through $max {
+  @include mobile{
+    .mb-sm-#{$i} {
+      margin-bottom: $i * 4px;
+    }
+  }
+}
+
+
+
+
+
+
+
